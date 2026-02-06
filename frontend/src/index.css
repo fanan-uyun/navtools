@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-black;
+  }
+  
+  body {
+    @apply font-sans antialiased;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* 粗野主义按钮 */
+  .btn-brutal {
+    @apply px-4 py-2 bg-brutal-yellow border-2 border-black font-semibold 
+           shadow-brutal transition-all duration-150 
+           hover:shadow-brutal-hover hover:-translate-x-0.5 hover:-translate-y-0.5
+           active:shadow-none active:translate-x-0.5 active:translate-y-0.5;
+  }
+  
+  .btn-brutal-secondary {
+    @apply px-4 py-2 bg-white border-2 border-black font-semibold 
+           shadow-brutal transition-all duration-150 
+           hover:shadow-brutal-hover hover:-translate-x-0.5 hover:-translate-y-0.5
+           active:shadow-none active:translate-x-0.5 active:translate-y-0.5;
+  }
+  
+  .btn-brutal-dark {
+    @apply px-4 py-2 bg-brutal-black text-white border-2 border-black font-semibold 
+           shadow-brutal transition-all duration-150 
+           hover:shadow-brutal-hover hover:-translate-x-0.5 hover:-translate-y-0.5
+           active:shadow-none active:translate-x-0.5 active:translate-y-0.5;
+  }
+  
+  /* 粗野主义卡片 */
+  .card-brutal {
+    @apply bg-white border-2 border-black shadow-brutal transition-all duration-200;
+  }
+  
+  .card-brutal:hover {
+    @apply shadow-brutal-hover -translate-x-0.5 -translate-y-0.5;
+  }
+  
+  /* 粗野主义输入框 */
+  .input-brutal {
+    @apply w-full px-4 py-2 bg-white border-2 border-black 
+           focus:outline-none focus:ring-2 focus:ring-brutal-yellow 
+           transition-all duration-150;
+  }
+  
+  /* 粗野主义标签 */
+  .tag-brutal {
+    @apply inline-flex items-center px-2 py-1 bg-brutal-yellow 
+           border border-black text-xs font-medium;
+  }
+  
+  /* 粗野主义导航 */
+  .nav-brutal {
+    @apply flex items-center gap-1 px-3 py-2 border-2 border-transparent
+           hover:border-black hover:shadow-brutal-sm transition-all duration-150;
+  }
+  
+  .nav-brutal-active {
+    @apply flex items-center gap-1 px-3 py-2 bg-brutal-yellow 
+           border-2 border-black shadow-brutal-sm;
+  }
+  
+  /* 网格背景 */
+  .bg-grid {
+    background-image: 
+      linear-gradient(to right, rgba(0,0,0,0.1) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0,0,0,0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+  
+  /* 滚动条样式 */
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-track {
+    @apply bg-gray-100 border-l border-black;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    @apply bg-brutal-black border border-black;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-800;
+  }
+}
+
+/* 动画 */
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.3s ease-out;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { 
+    transform: translateY(10px); 
+    opacity: 0; 
+  }
+  to { 
+    transform: translateY(0); 
+    opacity: 1; 
+  }
+}
