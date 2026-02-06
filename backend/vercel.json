@@ -12,14 +12,6 @@
   ],
   "routes": [
     {
-      "src": "/docs",
-      "dest": "main.py"
-    },
-    {
-      "src": "/openapi.json",
-      "dest": "main.py"
-    },
-    {
       "src": "/(.*)",
       "dest": "main.py"
     }
@@ -28,6 +20,12 @@
     "APP_NAME": "NavTools",
     "APP_VERSION": "1.0.0",
     "DEBUG": "false",
-    "LOG_LEVEL": "INFO"
+    "LOG_LEVEL": "INFO",
+    "DATABASE_URL": "postgresql+asyncpg://postgres:G2Sz*6-5bPiap5g@db.hxxgpsicmtqspgjgzzto.supabase.co:5432/postgres",
+    "SECRET_KEY": "navtools-super-secret-key-2024-production",
+    "ALLOWED_ORIGINS": "https://navtools-frontend.vercel.app,https://navtools-demo.vercel.app,https://navtools.vercel.app",
+    "DEFAULT_ADMIN_USERNAME": "admin",
+    "DEFAULT_ADMIN_PASSWORD": "Admin@123",
+    "DEFAULT_ADMIN_EMAIL": "admin@navtools.local"
   }
 }
