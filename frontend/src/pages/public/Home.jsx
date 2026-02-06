@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react'
 import { Search, Wrench, Grid3X3, Star, TrendingUp } from 'lucide-react'
-import { api } from '../contexts/AuthContext.jsx'
-import ToolCard from '../components/ToolCard.jsx'
-import CategoryTag from '../components/CategoryTag.jsx'
-import ThemeToggle from '../components/ThemeToggle.jsx'
-import { cn } from '../lib/utils.js'
+import { api } from '../contexts/AuthContext'
+import ToolCard from '../components/ToolCard'
+import CategoryTag from '../components/CategoryTag'
+import ThemeToggle from '../components/ThemeToggle'
+import { cn } from '../lib/utils'
 
 function Home() {
   const [siteConfig, setSiteConfig] = useState(null)

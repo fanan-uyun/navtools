@@ -9,7 +9,7 @@ import {
   Star,
   Share2
 } from 'lucide-react'
-import { api } from '../../contexts/AuthContext.jsx'
+import { api } from '../../contexts/AuthContext'
 import ThemeToggle from '../../components/ThemeToggle'
 
 function ToolDetail() {

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Plus, Search, Edit2, Trash2, X, Palette } from 'lucide-react'
-import { api } from '../../contexts/AuthContext.jsx'
+import { api } from '../../contexts/AuthContext'
 
 function CategoriesManage() {
   const [categories, setCategories] = useState([])

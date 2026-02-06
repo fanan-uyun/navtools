@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Lock, User, AlertCircle } from 'lucide-react'
-import { useAuth } from '../../contexts/AuthContext.jsx'
+import { useAuth } from '../../contexts/AuthContext'
 
 function AdminLogin() {
   const [username, setUsername] = useState('')

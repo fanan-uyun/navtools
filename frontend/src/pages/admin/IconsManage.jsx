@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Plus, Search, Edit2, Trash2, X } from 'lucide-react'
-import { api } from '../../contexts/AuthContext.jsx'
-import { cn } from '../../lib/utils.js'
+import { api } from '../../contexts/AuthContext'
+import { cn } from '../../lib/utils'
 
 function IconsManage() {
   const [icons, setIcons] = useState([])

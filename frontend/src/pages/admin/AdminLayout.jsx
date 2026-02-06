@@ -10,7 +10,7 @@ import {
   LogOut,
   Home
 } from 'lucide-react'
-import { useAuth } from '../../contexts/AuthContext.jsx'
+import { useAuth } from '../../contexts/AuthContext'
 
 function AdminLayout() {
   const { user, isSuperuser, logout } = useAuth()
