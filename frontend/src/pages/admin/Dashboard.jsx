@@ -7,8 +7,8 @@ import {
   TrendingUp,
   Clock
 } from 'lucide-react'
-import { api } from '../../contexts/AuthContext'
-import { formatDate } from '../../lib/utils'
+import { api } from '../../contexts/AuthContext.jsx'
+import { formatDate } from '../../lib/utils.js'
 
 function Dashboard() {
   const [stats, setStats] = useState({

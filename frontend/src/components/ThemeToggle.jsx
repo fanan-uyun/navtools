@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Palette, X } from 'lucide-react'
-import { useTheme } from '../contexts/ThemeContext'
+import { useTheme } from '../contexts/ThemeContext.jsx'
 import { cn } from '../lib/utils'
 
 function ThemeToggle() {

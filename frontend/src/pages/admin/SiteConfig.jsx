@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Save, Globe, Mail, Shield, Image as ImageIcon, FileText } from 'lucide-react'
-import { api } from '../../contexts/AuthContext'
+import { api } from '../../contexts/AuthContext.jsx'
 
 function SiteConfig() {
   const [config, setConfig] = useState({

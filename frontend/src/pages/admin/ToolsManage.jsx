@@ -10,8 +10,8 @@ import {
   Check,
   MoreHorizontal
 } from 'lucide-react'
-import { api } from '../../contexts/AuthContext'
-import { cn, truncate } from '../../lib/utils'
+import { api } from '../../contexts/AuthContext.jsx'
+import { cn, truncate } from '../../lib/utils.js'
 
 function ToolsManage() {
   const [tools, setTools] = useState([])

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Plus, Search, Edit2, Trash2, X, Shield, User } from 'lucide-react'
-import { api } from '../../contexts/AuthContext'
-import { formatDate } from '../../lib/utils'
+import { api } from '../../contexts/AuthContext.jsx'
+import { formatDate } from '../../lib/utils.js'
 
 function AdminsManage() {
   const [admins, setAdmins] = useState([])

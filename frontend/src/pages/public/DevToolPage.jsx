@@ -9,8 +9,8 @@ import {
   Download,
   RefreshCw
 } from 'lucide-react'
-import { api } from '../contexts/AuthContext'
-import ThemeToggle from '../components/ThemeToggle'
+import { api } from '../contexts/AuthContext.jsx'
+import ThemeToggle from '../components/ThemeToggle.jsx'
 
 // 公众号文章提取工具
 function WeChatExtractor() {

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Search, Filter, Calendar } from 'lucide-react'
-import { api } from '../../contexts/AuthContext'
-import { formatDate } from '../../lib/utils'
+import { api } from '../../contexts/AuthContext.jsx'
+import { formatDate } from '../../lib/utils.js'
 
 function AuditLogs() {
   const [logs, setLogs] = useState([])
